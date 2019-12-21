@@ -1,0 +1,46 @@
+@import './variables';
+
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header__logo {
+    padding-left: 18px;
+}
+
+.header__nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+.header__nav-li {
+    margin: 10px;
+    :hover {
+        color: $yellow-hover;
+        transform: scale(1.5);
+    }
+}
+
+.header__nav-link {
+    text-decoration: none;
+}
+
+.fa-shopping-cart {
+    color: $yellow;
+}
+
+.fa-user {
+    color: $yellow;
+}
+
+.fa-box-open {
+    color: $yellow;
+}
+
+
