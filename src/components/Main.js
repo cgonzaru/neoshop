@@ -1,11 +1,24 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import slide1 from '../images/slide1.jpg';
-import slide2 from '../images/slide2.jpg';
-import slide3 from '../images/slide3.jpg';
-import slide4 from '../images/slide4.jpg';
-import 'react-awesome-slider/dist/styles.css';
+import { Container, Row, Col } from 'react-grid-system';
+import slide1 from '../images/slider/slide1.jpg';
+import slide2 from '../images/slider/slide2.jpg';
+import slide3 from '../images/slider/slide3.jpg';
+import slide4 from '../images/slider/slide4.jpg';
+import vans1 from '../images/products/vans1.png';
+import vans2 from '../images/products/vans2.png';
+import vans3 from '../images/products/vans3.png';
+import vans4 from '../images/products/vans4.png';
+import vans5 from '../images/products/vans5.png';
+import vans6 from '../images/products/vans6.png';
+import vans7 from '../images/products/vans7.png';
+import vans8 from '../images/products/vans8.png';
+import cta1 from '../images/cta/cta1.jpg';
+import cta2 from '../images/cta/cta2.jpg';
+
+
+//import 'react-awesome-slider/dist/styles.css';
 import '../scss/Main.scss';
 
 const Main = props => {
@@ -44,8 +57,87 @@ const Main = props => {
 			</div>
 			<div className="main__products">
 				<h2 className="products-title">productos</h2>
-				<div className="products-container">Aquí van las imágenes</div>
-				<div className="products-button"><button className="btn">cargar más productos</button></div>
+				<div className="products-container">
+					<Container>
+						<Row>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans1} alt="vans1" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans2} alt="vans2" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans3} alt="vans3" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+						</Row>
+						<Row>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans4} alt="vans4" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							<Col sm={8}>
+								<div className="vas-container">
+									<img src={cta1} alt="cta1" className="cta" />
+								</div>
+							</Col>
+							
+						</Row>
+						<Row>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans5} alt="vans5" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans6} alt="vans6" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans7} alt="vans7" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+						</Row>
+						<Row>
+							<Col sm={8}>
+								<div className="vas-container">
+									<img src={cta2} alt="cta2" className="cta" />
+								</div>
+							</Col>
+							<Col sm={4}>
+								<div className="vas-container">
+									<img src={vans8} alt="vans8" className="vans" />
+									<span className="vans-text">Old skool 36 dx</span>
+									<button className="vans-btn">Comprar</button>
+								</div>
+							</Col>
+							
+						</Row>
+					</Container>
+				</div>
+				<div className="products-button"><button className="products-btn">cargar más productos</button></div>
 			</div>
 		</main>
 	);

@@ -5,7 +5,6 @@
 }
 
 .main__products {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,4 +82,46 @@
     height: 40px;
     width: 100px;
     font-weight: 700;
+}
+
+.vans {
+    width: 250px;
+    height: 200px;
+}
+
+.vas-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.vans-btn {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.cta {
+    background-size: cover;
+    clip-path: inset(600px 0 0 0);
+}
+.clip{
+    clip-path: inset(20px 60px 20px 0px);
+   }
+
+.products-btn {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: black;
+    height: 40px;
+    width: 200px;
+    font-weight: 700;
+    align-items: center;
 }
